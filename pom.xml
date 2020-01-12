@@ -50,6 +50,7 @@
         <module>textstyle</module>
         <module>textprintmodestyle</module>
         <module>samples-common</module>
+        <module>tcpip-stream</module>
     </modules>
 
     <dependencyManagement>
