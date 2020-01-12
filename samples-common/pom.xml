@@ -5,12 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>escpos-coffee-samples</artifactId>
-        <groupId>com.github.anastaciocintra</groupId>
+        <groupId>com.github.anastaciocintra.escpos-coffee-samples</groupId>
+        <artifactId>samples</artifactId>
         <version>${revision}</version>
-
     </parent>
-
 
 
     <artifactId>samples-common</artifactId>
