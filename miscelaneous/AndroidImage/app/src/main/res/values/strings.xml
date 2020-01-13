@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdroidEscposCoffee</string>
+    <string name="host">10.0.1.46</string>
+    <string name="port">9100</string>
+</resources>
