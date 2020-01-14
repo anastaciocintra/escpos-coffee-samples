@@ -1,3 +1,57 @@
+# AndroidImage
+This project show how to use escpos-coffee library on Android Studio and
+how to use CoffeeImageAndroidImpl class
+
+## Points of attention:
+1. the class com.github.anastaciocintra.output.PrinterOutputStream 
+isn't compatible with android sdk. You need to use:
+    1. com.github.anastaciocintra.output.TcpIpOutputStream. 
+    Used on this sample code.
+    1. another printer outputstream for android sdk.
+1. About ip address and port
+    1. getting ip address and port to use
+        1. if you have one Ethernet / wifi printer, then you 
+    need to discover the ip address and port of the printer. 
+        1. local installed printer. Then you need to run one auxiliary program 
+    (https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscelaneous/server-print)
+    to receive ip connection from the android app and redirect to the 
+    local printer spool. When you run this server-printer, you need to inform the server ip-port.
+    1. configure res.values.strings.xml with the values obtained on step before.
+        1. host value
+        1. port value 
+
+## Writing your own android app and copy only pieces of code.  
+Configure dependencies an compatibility on app build.gradle
+```
+dependencies {
+    ...
+    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.0-SNAPSHOT'
+
+}
+
+repositories {
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+android {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+```     
+
+Configure permissions on manifests.AndroidManifest.xml
+```xml
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+
+Copy java implementation of com.github.anastaciocintra.escpos.image.CoffeeImage for android
+```java
 /*
 MIT License
 
@@ -63,3 +117,5 @@ public class CoffeeImageAndroidImpl implements CoffeeImage {
         return bitmap.getPixel(x, y);
     }
 }
+
+```

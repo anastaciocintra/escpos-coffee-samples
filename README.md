@@ -9,6 +9,7 @@ https://github.com/anastaciocintra/escpos-coffee
 
 ## Running Samples
 ```shell script
+cd usual
 mvn clean package
 java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar 
 # without argument to list the priter names
