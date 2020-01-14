@@ -30,9 +30,8 @@ dependencies {
 }
 
 repositories {
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots"
-    }
+    mavenCentral()
+
 }
 
 android {
@@ -43,6 +42,17 @@ android {
 }
 
 ```     
+
+If you want to work with escpos-coffee SNAPSHOTS (unstable[CAUTION]), add on app build.gradle:
+```
+repositories {
+    mavenCentral()
+
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+```
 
 Configure permissions on manifests.AndroidManifest.xml
 ```xml
