@@ -16,6 +16,8 @@ java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar
 java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar "printer name"
 ```
 
+Visit miscellaneous directory for more examples.
+
 ## Versioning
 
 The version of this project follow the versions of escpos-coffee library and each version have its own branch:
