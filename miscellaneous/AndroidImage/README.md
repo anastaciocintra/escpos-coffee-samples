@@ -12,15 +12,13 @@ isn't compatible with android sdk. You need to use:
     1. getting ip address and port to use
         1. if you have one Ethernet / wifi printer, then you 
     need to discover the ip address and port of the printer. 
-        1. local installed printer. Then you need to run one auxiliary program 
+        1. if you have only a local printer. Then you need to run one auxiliary program 
     (https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscelaneous/server-print)
-    to receive ip connection from the android app and redirect to the 
-    local printer spool. When you run this server-printer, you need to inform the server ip-port.
     1. configure res.values.strings.xml with the values obtained on step before.
         1. host value
         1. port value 
 
-## Writing your own android app and copy only pieces of code.  
+## If you want to write your own android app intending for  to copy important pieces of code, follow some tips bellow:  
 Configure dependencies an compatibility on app build.gradle
 ```
 dependencies {
@@ -85,10 +83,8 @@ MIT License
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
         SOFTWARE.
 
-        package com.github.anastaciocintra.escposcoffeesamples.androidimage;
 */
 
-package com.github.anastaciocintra.escposcoffeesamples.androidimage;
 
 import android.graphics.Bitmap;
 
