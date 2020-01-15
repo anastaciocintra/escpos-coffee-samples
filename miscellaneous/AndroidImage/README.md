@@ -13,7 +13,7 @@ isn't compatible with android sdk. You need to use:
         1. if you have one Ethernet / wifi printer, then you 
     need to discover the ip address and port of the printer. 
         1. if you have only a local printer. Then you need to run one auxiliary program 
-    (https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscelaneous/server-print)
+        [server-print](../server-print)
     1. configure res.values.strings.xml with the values obtained on step before.
         1. host value
         1. port value 
@@ -23,7 +23,7 @@ Configure dependencies an compatibility on app build.gradle
 ```
 dependencies {
     ...
-    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.0-SNAPSHOT'
+    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.1'
 
 }
 
