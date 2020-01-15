@@ -1,4 +1,5 @@
 #server-print
+
 This is an example code to pipe stream between tcp/ip connection and local printer. 
 That is, it receives tcp/ip stream and send to the local printer.
 
@@ -11,6 +12,7 @@ But you can use this for alternative tool for share one printer over clients in 
 
 
 running:
+
  ```shell script
 mvn package
 java -jar target/server-print[version]-jar-with-dependencies.jar tm-t20 9100 

@@ -1,4 +1,5 @@
 # AndroidImage
+
 This project show how to use escpos-coffee library on Android Studio and
 how to use CoffeeImageAndroidImpl class
 
