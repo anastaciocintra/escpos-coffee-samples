@@ -21,7 +21,7 @@ Visit miscellaneous directory for more examples.
 ## Versioning
 
 The version of this project follow the versions of escpos-coffee library and each version have its own branch:
-the version 4.0.0 can be accessed on branch 4.0.0.
+For example, the version 4.0.1 can be accessed on branch 4.0.1
 
 The branch master have always the last stable version.
 
