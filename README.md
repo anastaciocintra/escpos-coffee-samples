@@ -25,9 +25,6 @@ the version 4.0.0 can be accessed on branch 4.0.0.
 
 The branch master have always the last stable version.
 
-## Issues
-Find, comment or open issues on https://github.com/anastaciocintra/escpos-coffee/issues
-
 
 ## Contributting 
 Contributors are welcome, 
