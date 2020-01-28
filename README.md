@@ -16,7 +16,7 @@ java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar
 java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar "printer name"
 ```
 
-##Usual Directory
+## Usual Directory
 Have samples for most common functions of the escpos-coffee lib, for example, 
 how to print an image or how to print a barcode. It is enough to make a good receipt print.
 * barcode - how to print bar-codes
@@ -32,7 +32,7 @@ how to print an image or how to print a barcode. It is enough to make a good rec
     * textstyle
     * textprintmodestyle
 
-##Miscellaneous Directory
+## Miscellaneous Directory
 More specific usages of the escpos-coffee:
 * AndroidImage - How to print an image with Android Studio
 * SerialStream - How to use Serial Port   (com1, com2...) Stream

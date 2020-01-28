@@ -13,7 +13,7 @@ http://github.com/usb4java/usb4java
 
 
 
-##Read this before use
+## Read this before use
 I'm not a usb4java expert, then if you are in trouble with usb4java, probably I'll not help you.
 
 For me, the printer itself have its status led indicator, and its enough.
