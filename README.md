@@ -16,7 +16,31 @@ java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar
 java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar "printer name"
 ```
 
-Visit miscellaneous directory for more examples.
+##Usual Directory
+Have samples for most common functions of the escpos-coffee lib, for example, 
+how to print an image or how to print a barcode. It is enough to make a good receipt print.
+* barcode - how to print bar-codes
+* charcode - how to print  other languages Strings
+* getstart - print escpos-coffee version 
+* Image Printing - some samples of how to print an image.
+    * bitimage - uses esc/pos sequence: "ESC '*'
+    * dithering - uses dithering algorithm to make image more "realistic"
+    * graphics-image - uses esc/pos sequence: "GS(L"
+    * raster-image - uses esc/pos sequence: "GS 'v' '0'"
+* tcpip-stream - how to print on ethernet printer
+* Text Style - how to style the text to print
+    * textstyle
+    * textprintmodestyle
+
+##Miscellaneous Directory
+More specific usages of the escpos-coffee:
+* AndroidImage - How to print an image with Android Studio
+* SerialStream - How to use Serial Port   (com1, com2...) Stream
+* SerialStatus - How to get online status of the printer using Serial port I/O
+* Usb4JavaStream - How to use a usb port I/O 
+* UsbStatus - How to get on line status of the printer using usb port I/O 
+
+
 
 ## Versioning
 
