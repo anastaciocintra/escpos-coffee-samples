@@ -1,0 +1,88 @@
+FLYING SAUCER XML/CSS RENDERER LICENSE COMMENTS
+Copyright (C) 2015 Patrick Wright 
+https://code.google.com/p/flying-saucer/
+
+All source code to Flying Saucer itself is licensed under the GNU Lesser General
+Public License (LGPL); you can redistribute it and/or modify it under the terms
+of the GNU Lesser General Public License as published by the Free Software
+Foundation, either version 2.1 of the License, or (at your option) any later version.
+A copy of the LGPL can be found
+on the website of the Free Software Foundation, at 
+http://www.gnu.org/copyleft/lesser.html, and in our distributions under
+LICENSE-LGPL-2.1.txt or LICENSE-LGPL-3.txt.
+
+Flying Saucer relies on several other free or open source projects in 
+order to build and run. Where binary Java JAR files are included, we include
+only the unmodified binary releases as provided by those other projects. 
+Source code for the respective projects can be found on the project 
+websites, listed below.
+
+Java projects that are used for building and running Flying Saucer are:
+
+
+JUnit (for testing)
+http://junit.org
+License: Common Public License Version 1.0
+Using version 3.8.1
+Included as lib/junit.jar
+
+Ant (for building)
+http://ant.apache.org/
+License: Apache Software License Version 2.0
+Not packaged with release; development using version 1.6.x
+
+iText (PDF generation)
+http://itextpdf.com/
+License: Mozilla Public License Version 1.1
+Using version 2.1.7.
+Included as lib/iText-2.1.7.jar
+
+iText 5 (PDF generation only used in flying-saucer-pdf-itext5)
+http://itextpdf.com/
+License: Affero General Public License
+Using version 5.3.0.
+
+SVGSalamander (SVG rendering in demo)
+https://svgsalamander.java.net/
+License: LGPL
+Using version 1, released on the project website
+
+SWT (Standard Widget Toolkit)
+http://www.eclipse.org/swt/
+License: Eclipse Public License Version 1.0 ("EPL"). A copy of the EPL is available at http://www.eclipse.org/legal/epl-v10.html
+Including version 3.5 libraries for Windows, Mac, and Linux
+
+DocBook CSS (DocBook XML Rendering with CSS)
+  MozBook CSS (public domain, released by David Horton)
+  WSIWYGDocBook 1.01 -- see demos\docbook\wysiwygdocbook1.01, and COPYING therein
+  docbook-css-0.4 -- see demos\docbook\docbook-css-0.4, and COPYING therein
+
+W3C CSS Test Suite
+  Distributed with our source bundle for the convenience of our developers.
+  License is W3C Document License, see LICENSE_W3C_TEST.
+  Source is http://www.w3.org/Style/CSS/Test/, for the most current version
+  please see that URL.
+
+Special thanks to Andy Streich, et. al. for Xilize
+Xilize Text to HTML library
+http://xilize.sourceforge.net/
+License: GPL
+Used version 3.x, only to produce documentation
+Shipped with our source bundle as a convenience for developers rebuilding 
+documentation; we do not use nor link to the Xilize libraries at runtime
+
+BeanShell
+http://www.beanshell.org
+License: LGPL (dual-license with SPL)
+Use version 2.x as Xilize has a dependency on it; used only to produce 
+documentation.
+
+XML-APIs (extracted from Apache Xerces-2)
+http://xerces.apache.org/xerces2-j/
+License: Apache v2
+We include the xml-apis.jar from the Xerces binary distribution in order to allow
+our code to compile on JDK 1.4, which does not include newer XML APIs, even though
+these API implementations will run on version 1.4 of the JRE. The JAR is unmodified
+from the Xerces release, but is renamed as xml-apis-xerces-2.9.1.jar to
+make the version clear.
+Included as lib/xml-apis-xerces-2.9.1.jar
