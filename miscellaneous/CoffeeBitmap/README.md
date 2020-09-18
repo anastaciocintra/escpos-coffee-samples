@@ -16,7 +16,7 @@ Has simplicity but is richier than Graphics2D and you can work with html
 ## FlyingSaucer
 Third party html renderer that offer better renderer to work with css.
 This library can be found at [https://github.com/flyingsaucerproject/flyingsaucer](https://github.com/flyingsaucerproject/flyingsaucer)
- and have LGPL licence. See [ThirdParty.md](https://github.com/anastaciocintra/escpos-coffee-samples/blob/css/miscellaneous/CoffeeBitmap/ThirdParty.md)
+ and have LGPL licence. See [ThirdParty.md](https://github.com/anastaciocintra/escpos-coffee-samples/blob/master/miscellaneous/CoffeeBitmap/ThirdParty.md)
  
  ### maven configure for Flying Saucer
 ```
