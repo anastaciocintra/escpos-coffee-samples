@@ -39,8 +39,10 @@ More specific usages of the escpos-coffee:
 * SerialStatus - How to get online status of the printer using Serial port I/O
 * Usb4JavaStream - How to use a usb port I/O 
 * UsbStatus - How to get on line status of the printer using usb port I/O 
-* SliceImage - **NEW** - How to print big images (beta version to be incorporated on escpos-coffee library)
-* CoffeeImage - **NEW** - How to construct html receipts
+* SliceImage  - How to print big images (beta version to be incorporated on escpos-coffee library)
+* CoffeeBitmap - **NEW** - How to construct html/css receipts
+* PdfPrinting - **NEW** - How to print pdf content
+
 
 
 
