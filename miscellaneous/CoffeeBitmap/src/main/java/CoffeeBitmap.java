@@ -23,6 +23,8 @@ SOFTWARE.
  */
 
 import com.github.anastaciocintra.escpos.EscPos;
+import com.github.anastaciocintra.escpos.EscPosConst;
+import com.github.anastaciocintra.escpos.Style;
 import com.github.anastaciocintra.escpos.image.*;
 import com.github.anastaciocintra.output.PrinterOutputStream;
 import lib.ImageHelper;
@@ -182,11 +184,11 @@ public class CoffeeBitmap {
 
     }
 
+
+    // Flying Sauer is better html/css renderer,
+    // but you can use others libs like javafx WebView
     public void FlyingSauer(PrinterOutputStream outputStream) throws IOException {
         EscPos escpos = new EscPos(outputStream);
-
-
-
 
 
         File temp = File.createTempFile("tmp_espos_sample", ".xhtml");
@@ -213,7 +215,6 @@ public class CoffeeBitmap {
                 "\n" +
                 "#customers tr:nth-child(even){background-color: #616161;}\n" +
                 "\n" +
-//                "#customers tr:hover {background-color: #616161;}\n" +
                 "\n" +
                 "#customers th {\n" +
                 "  padding-top: 12px;\n" +
@@ -291,28 +292,36 @@ public class CoffeeBitmap {
                 "</body>\n" +
                 "</html>";
 
-        tmpStreamxhtml.write(html.getBytes());
+        tmpStreamxhtml.write(html.getBytes("utf-8"));
         tmpStreamxhtml.close();
+        String tmpFileURL = temp.toURI().toURL().toExternalForm();
+
         // if you want to include image or other external, include at tmpFileURL directory...
-        String tmpFileURL =  temp.toURI().toURL().toExternalForm();
-        Java2DRenderer render = new Java2DRenderer(tmpFileURL, tmpFileURL, 576); // 576 is max printer area of the printer, you can configure to your
+        String tmpBaseURL =  temp.getParent();
+        Java2DRenderer render = new Java2DRenderer(tmpFileURL, tmpBaseURL, 576); // 576 is max printer area of the printer, you can configure to your
         BufferedImage image = render.getImage();
 
+        escpos.getStyle()
+                .setJustification(EscPosConst.Justification.Center)
+                .setFontSize(Style.FontSize._2, Style.FontSize._2);
+        escpos.writeLF("Flying Sauer\ncan understand\ncss 2.1 spec.\n");
         // send the graphic to the escpos printer...
         new ImageHelper().write(escpos, new CoffeeImageImpl(image),new RasterBitImageWrapper(),new BitonalOrderedDither());
-        
+
         escpos.feed(5).cut(EscPos.CutMode.FULL);
         escpos.close();
 
 
 
-        /* DEBUG
-        File output = new File("C:\\Users\\macin\\desenv\\css.png");
-        ImageIO.write(image, "png", output);
+//        /* DEBUG
+//        File output = new File("C:\\Users\\macin\\desenv\\css.png");
+//        ImageIO.write(image, "png", output);
 
-         */
+//         */
+
 
     }
+
 
 
     public static void main(String[] args) throws IOException {
@@ -331,5 +340,6 @@ public class CoffeeBitmap {
         coffeeBitmap.Graphics2D(new PrinterOutputStream(printService));
         coffeeBitmap.jEditorPane(new PrinterOutputStream(printService));
         coffeeBitmap.FlyingSauer(new PrinterOutputStream(printService));
+
     }
 }
