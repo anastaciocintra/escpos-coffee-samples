@@ -18,7 +18,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * make pdf rendering and send to escpos_coffee
+ * generate barcode image and print on  escpos_coffee
  */
 public class BarcodeGen {
 
@@ -57,8 +57,9 @@ public class BarcodeGen {
                         BarcodeFormat.QR_CODE,
                         200,200));
         // for debug
-        File output = new File("C:\\Users\\macin\\desenv\\qrcode.png");
-        ImageIO.write(image, "png", output);
+//        File output = new File("C:\\Users\\macin\\desenv\\qrcode.png");
+//        ImageIO.write(image, "png", output);
+
         escpos.writeLF("zxing QrCode");
         new ImageHelper().write(escpos
                 ,new CoffeeImageImpl(image)
