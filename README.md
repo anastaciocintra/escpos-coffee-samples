@@ -42,6 +42,7 @@ More specific usages of the escpos-coffee:
 * SliceImage  - How to print big images (beta version to be incorporated on escpos-coffee library)
 * CoffeeBitmap - **NEW** - How to construct html/css receipts
 * PdfPrinting - **NEW** - How to print pdf content
+* BarcodeGen - **NEW** - How to generate barcode image
 
 
 
