@@ -2,7 +2,7 @@
 Shows in one simple way how to construct bitmaps using 3 techniques.
 In theory, you can write every language glyph Unicode that you want, but it depends on the font.
 
-# Great benefits
+# Benefits
 Most of modern thermal printer can quickly print good quality images. So we can easily build 
 more complex layouts with all benefits of HTML/CSS offering better solution architecture.
  

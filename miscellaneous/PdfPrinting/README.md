@@ -2,7 +2,7 @@
 Shows how to print pdf documents on escpos-coffee
 
 ## Third Party library
-This project use PDFBox library, it is apache open source and can use on comercial applications.
+This project use PDFBox library, it can be used on comercial applications.
 This library can be found at [https://github.com/apache/pdfbox](https://github.com/apache/pdfbox). 
 
 Read about license on [ThirdParty.txt](https://github.com/anastaciocintra/escpos-coffee-samples/blob/master/miscellaneous/PdfPrinting/ThirdParty.txt)
