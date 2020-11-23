@@ -40,9 +40,10 @@ More specific usages of the escpos-coffee:
 * Usb4JavaStream - How to use a usb port I/O 
 * UsbStatus - How to get on line status of the printer using usb port I/O 
 * SliceImage  - How to print big images (beta version to be incorporated on escpos-coffee library)
-* CoffeeBitmap - **NEW** - How to construct html/css receipts
-* PdfPrinting - **NEW** - How to print pdf content
-* BarcodeGen - **NEW** - How to generate barcode image
+* CoffeeBitmap -   How to construct html/css receipts
+* PdfPrinting -  How to print pdf content
+* PdfPrintingAndroid - **NEW** - print pdf content on Android
+* BarcodeGen - How to generate barcode image
 
 
 
