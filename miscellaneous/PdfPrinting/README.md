@@ -1,6 +1,9 @@
 # PdfPrinting
 Shows how to print pdf documents on escpos-coffee
 
+## Android Studio
+[Go here](../pdfprintingandroid) if you are building android application.
+
 ## Third Party library
 This project use PDFBox library, it can be used on comercial applications.
 This library can be found at [https://github.com/apache/pdfbox](https://github.com/apache/pdfbox). 
