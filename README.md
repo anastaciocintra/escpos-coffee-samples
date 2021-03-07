@@ -7,7 +7,9 @@ https://github.com/anastaciocintra/escpos-coffee
 
 
 
-## Running Samples
+## Running Samples 
+### tip: build all together as below, otherwise you can get compilation errors. 
+
 ```shell script
 cd usual
 mvn clean package
@@ -19,31 +21,31 @@ java -jar [samplename]/target/[samplename]-jar-with-dependencies.jar "printer na
 ## Usual Directory
 Have samples for most common functions of the escpos-coffee lib, for example, 
 how to print an image or how to print a barcode. It is enough to make a good receipt print.
-* barcode - how to print bar-codes
-* charcode - how to print  other languages Strings
-* getstart - print escpos-coffee version 
+* [barcode](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/barcode) - how to print bar-codes
+* [charcode](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/charcode) - how to print  other languages Strings
+* [getstart](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/getstart) - print escpos-coffee version 
 * Image Printing - some samples of how to print an image.
-    * bitimage - uses esc/pos sequence: "ESC '*'
-    * dithering - uses dithering algorithm to make image more "realistic"
-    * graphics-image - uses esc/pos sequence: "GS(L"
-    * raster-image - uses esc/pos sequence: "GS 'v' '0'"
-* tcpip-stream - how to print on ethernet printer
+    * [bitimage](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/bitimage) - uses esc/pos sequence: "ESC '*'
+    * [dithering](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/dithering) - uses dithering algorithm to make image more "realistic"
+    * [graphics-image](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/graphics-image) - uses esc/pos sequence: "GS(L"
+    * [raster-image](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/raster-image) - uses esc/pos sequence: "GS 'v' '0'"
+* [tcpip-stream](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/tcpip-stream) - how to print on ethernet printer
 * Text Style - how to style the text to print
-    * textstyle
-    * textprintmodestyle
+    * [textstyle](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/textstyle)
+    * [textprintmodestyle](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/usual/textprintmodestyle)
 
 ## Miscellaneous Directory
 More specific usages of the escpos-coffee:
-* AndroidImage - How to print an image with Android Studio
-* SerialStream - How to use Serial Port   (com1, com2...) Stream
-* SerialStatus - How to get online status of the printer using Serial port I/O
-* Usb4JavaStream - How to use a usb port I/O 
-* UsbStatus - How to get on line status of the printer using usb port I/O 
-* SliceImage  - How to print big images (beta version to be incorporated on escpos-coffee library)
-* CoffeeBitmap -   How to construct html/css receipts
-* PdfPrinting -  How to print pdf content
-* PdfPrintingAndroid - **NEW** - print pdf content on Android
-* BarcodeGen - How to generate barcode image
+* [AndroidImage](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/AndroidImage) - (android only) How to print an image with Android Studio
+* [SerialStream](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/SerialStream) - (desktop only) How to use Serial Port   (com1, com2...) Stream
+* [SerialStatus](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/SerialStatus) - (desktop only) How to get online status of the printer using Serial port I/O
+* [Usb4JavaStream](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/Usb4JavaStream) - (desktop only) How to use a usb port I/O 
+* [UsbStatus](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/UsbStatus) - (desktop only) How to get on line status of the printer using usb port I/O 
+* [SliceImage](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/sliceimage)  - (android/desktop) How to print big images (beta version to be incorporated on escpos-coffee library)
+* [CoffeeBitmap](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/CoffeeBitmap) -   (desktop only) How to construct Graphics2D, jEditorPane and html/css receipts
+* [PdfPrinting](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/PdfPrinting) -  (desktop only) How to print pdf content
+* [PdfPrintingAndroid](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/pdfprintingandroid)  - (android only) How to print pdf content on Android
+* [BarcodeGen](https://github.com/anastaciocintra/escpos-coffee-samples/tree/master/miscellaneous/BarcodeGen) - How to generate barcode image
 
 
 
