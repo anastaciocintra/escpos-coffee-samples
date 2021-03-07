@@ -15,7 +15,7 @@ https://github.com/Fazecast/jSerialComm
 
 
 
-##Read this before use
+## Read this before use
 
 For me, the printer itself have its status led indicator, and its enough.
 The escpos-coffee have the PrinterOutputStream that works properly to print.
