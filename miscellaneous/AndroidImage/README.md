@@ -4,8 +4,9 @@ This project show how to use escpos-coffee library on Android Studio and
 how to use CoffeeImageAndroidImpl class
 
 ## Points of attention:
-1. the class com.github.anastaciocintra.output.PrinterOutputStream 
-isn't compatible with android sdk. You need to use:
+1. **Min api level 19 (KitKat) Android 4.4**
+1. the class com.github.anastaciocintra.output.PrinterOutputStream
+   isn't compatible with android sdk. You need to use:
     1. com.github.anastaciocintra.output.TcpIpOutputStream. 
     Used on this sample code.
     1. another printer outputstream for android sdk.
@@ -24,7 +25,7 @@ Configure dependencies an compatibility on app build.gradle
 ```
 dependencies {
     ...
-    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.2'
+    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.3'
 
 }
 

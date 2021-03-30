@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import com.github.anastaciocintra.escpos.EscPos;
 import com.github.anastaciocintra.escpos.EscPosConst;
 import com.github.anastaciocintra.escpos.Style;
+import com.github.anastaciocintra.escpos.barcode.BarCode;
 import com.github.anastaciocintra.escpos.image.Bitonal;
 import com.github.anastaciocintra.escpos.image.BitonalOrderedDither;
 import com.github.anastaciocintra.escpos.image.EscPosImage;
@@ -65,7 +66,15 @@ public class Print extends Thread {
             EscPosImage escposImage = new EscPosImage(new CoffeeImageAndroidImpl(bitmap), algorithm);
             escpos.write(imageWrapper, escposImage);
             escpos.feed(5).cut(EscPos.CutMode.FULL);
-
+            BarCode barcode = new BarCode();
+            escpos.writeLF("barcode UPCA system ");
+            barcode.setSystem(BarCode.BarCodeSystem.UPCA);
+            barcode.setHRIPosition(BarCode.BarCodeHRIPosition.BelowBarCode);
+            barcode.setBarCodeSize(2, 100);
+            escpos.feed(2);
+            escpos.write(barcode, "12345678901");
+            escpos.feed(3);
+            escpos.feed(5).cut(EscPos.CutMode.FULL);
         }
         catch (IOException e) {
             e.printStackTrace();

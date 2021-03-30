@@ -3,7 +3,11 @@ package com.github.anastaciocintra.escposcoffeesamples.pdfprintingandroid;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.pdf.PdfRenderer;
+import android.os.Build;
 import android.os.ParcelFileDescriptor;
+
+import androidx.annotation.RequiresApi;
+
 import com.github.anastaciocintra.escpos.EscPos;
 import com.github.anastaciocintra.escpos.image.Bitonal;
 import com.github.anastaciocintra.escpos.image.BitonalThreshold;
@@ -23,6 +27,7 @@ public class Print extends Thread {
         this.context = context;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public void run(){
         String host = context.getString(R.string.host);
         int port = Integer.parseInt(context.getString(R.string.port));
