@@ -25,7 +25,7 @@ Configure dependencies an compatibility on app build.gradle
 ```
 dependencies {
     ...
-    implementation 'com.github.anastaciocintra:escpos-coffee:4.0.3'
+    implementation 'com.github.anastaciocintra:escpos-coffee:4.1.0-SNAPSHOT'
 
 }
 
